@@ -6,6 +6,19 @@ function displayPhone()
 {
 alert("Button to select phone pressed");
 }
+function mDown(obj)
+{
+if (obj.id == "nexus4"){
+				
+		alert("Nexus 4 image pressed");
+
+	}
+else if (obj.id == "sgs3"){
+	alert("Samsung Galaxy S3 image pressed");
+}
+
+}
+
 </script>
 </head>
 <body>
@@ -13,7 +26,10 @@ alert("Button to select phone pressed");
 <h1>Android ROM Compilation Site</h1>
 <p id="demo">A place to post and organize your ROMs</p>
 
-<button type="button" onclick="displayPhone()">Display Phone</button>
+<img id="nexus4" onmousedown="mDown(this)" onmouseup="mUp(this)" src="nexus4.jpeg" width="160" height=120">
+
+<img id="sgs3" onmousedown="mDown(this)" onmouseup="mUp(this)" src="sgs3.jpg" width="160" height=120">
+
 
 
 
